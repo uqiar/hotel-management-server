@@ -36,7 +36,7 @@ require('./api/routes/staff')(app)
 
 app.get("/test",async(req,res)=>{
     console.log("request come here",new Date())
-    res.send("running......")
+    res.send("server is running..")
 })
 
 
