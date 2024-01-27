@@ -6,7 +6,7 @@ const axios =require("axios")
 //Runs every minute
 cron.schedule('59 * * * * *',async()=>{
     let users=await Users.find()
-     let server=await axios.get("https://movers-server.onrender.com/test")
+     let server=await axios.get("https://hotel-management-server.onrender.com/test")
     console.log("all usrs",users.length,server.data)
  });
 
